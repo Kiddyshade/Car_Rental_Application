@@ -23,6 +23,7 @@ namespace CarRentalApp
 
         private void AddUser_Load(object sender, EventArgs e)
         {
+            //This is form load event
             var roles = _db.Roles.ToList();
             cmbRole.DataSource = roles;
             cmbRole.ValueMember = "Id";
